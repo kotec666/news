@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "require-jsdoc": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/ban-types": "off",
+        "padded-blocks": ["error", { "blocks": "never" }],
+        "no-unused-expressions": "off",
+        "no-unused-vars": "off",
+        "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+        "indent": "off",
+        "linebreak-style": 0,
+        "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "react/jsx-key": "off",
+        "@typescript-eslint/explicit-module-boundary-types": [
+            "off",
+            {
+                "allowExpressions": true
+            }
+        ]
+    }
+}
