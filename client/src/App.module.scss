@@ -1,1 +1,12 @@
+.pageWrapper {
+  width: 80%;
+  margin: 0 auto 2rem;
+}
 
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+}

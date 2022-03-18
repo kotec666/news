@@ -1,0 +1,131 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  column-gap: 55%;
+  border-bottom: 1px solid #EAE6DA;
+
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .logo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  .nav__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    column-gap: 5%;
+  }
+
+  .linkActive {
+    background: #f8eab6;
+  }
+
+
+  .linkWrapper, .linkActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 65px;
+    cursor: pointer;
+
+    &:hover{
+      background: #f6edc7;
+      transition: .3s;
+    }
+
+    transition: .3s;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.uploadForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  .actionBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+
+    margin: 2% 0 2% 0;
+    padding: 2% 2% 2% 2%;
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+
+    background: #20BD5F;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: #C4C4C4;
+    }
+  }
+
+  .inputActionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 40%;
+
+    textarea {
+      resize: none;
+    }
+    label {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  input, textarea {
+    width: 100%;
+    height: 35px;
+
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding-left: 5%;
+
+    &:focus {
+      outline: 1px solid black;
+    }
+  }
+
+  .newsBody {
+    height: 200px;
+  }
+}
